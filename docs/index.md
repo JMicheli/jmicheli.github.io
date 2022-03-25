@@ -1,7 +1,3 @@
 # Title of page
 
-First paragraph of text.
-
-## Level 2 header
-
-Second paragraph of text.
+This is the jmicheli.github.io index page. Currently under development.
