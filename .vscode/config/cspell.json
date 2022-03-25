@@ -12,6 +12,8 @@
   "ignorePaths": [
     "${workspaceFolder}/.vscode/"
   ],
-  "words": [],
+  "words": [
+    "jmicheli"
+  ],
   "ignoreWords": []
 }
