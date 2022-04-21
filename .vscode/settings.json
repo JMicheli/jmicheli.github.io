@@ -1,0 +1,16 @@
+{
+  "cSpell.enabled": true,
+  "cSpell.import": ["${workspaceFolder}/tools/cspell.json"],
+
+  "markdownlint.run": "onType",
+
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false
+  }
+}

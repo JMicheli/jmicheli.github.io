@@ -1,0 +1,7 @@
+# Dependencies
+node_modules/
+
+# Python virtual environment/testing output
+venv/
+__pycache__/
+*.py[cod]

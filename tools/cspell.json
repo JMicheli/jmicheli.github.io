@@ -1,0 +1,21 @@
+{
+  "showStatus": true,
+  "enableGlobDot": false,
+  "enabledLanguageIds": [
+    "markdown",
+    "json"
+  ],
+  "features": {
+    "weighted-suggestions": true
+  },
+  "globRoot": "${workspaceFolder}",
+  "ignorePaths": [
+    "${workspaceFolder}/.vscode/"
+  ],
+  "words": [
+  ],
+  "ignoreWords": [
+    "jmicheli",
+    "subdir"
+  ]
+}
