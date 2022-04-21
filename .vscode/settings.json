@@ -1,9 +1,8 @@
 {
   "cSpell.enabled": true,
-  "cSpell.import": ["${workspaceFolder}/.vscode/config/cspell.json"],
+  "cSpell.import": ["${workspaceFolder}/tools/cspell.json"],
 
   "markdownlint.run": "onType",
-  "markdownlint.ignore": "${workspaceFolder}/.vscode/.markdownlintignore",
 
   "[markdown]": {
     "editor.formatOnSave": true,
