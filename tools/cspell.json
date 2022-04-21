@@ -13,7 +13,9 @@
     "${workspaceFolder}/.vscode/"
   ],
   "words": [
-    "jmicheli"
   ],
-  "ignoreWords": []
+  "ignoreWords": [
+    "jmicheli",
+    "subdir"
+  ]
 }

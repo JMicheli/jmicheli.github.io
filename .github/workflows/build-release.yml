@@ -1,0 +1,27 @@
+name: WebGL Auto-deployment
+
+# When workflow will run.
+on:
+  # Triggers on push or pull request events for the release branch
+  push:
+    branches:
+      - release
+
+  # Allows the workflow to be manually run from the Actions tab.
+  workflow_dispatch:
+
+# The workflow is a build job followed by a deploy job.
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Push src/ content to gh-pages branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: src
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
