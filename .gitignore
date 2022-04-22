@@ -1,7 +1,6 @@
-# Dependencies
-node_modules/
-
-# Python virtual environment/testing output
-venv/
-__pycache__/
-*.py[cod]
+# Jekyll items
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
