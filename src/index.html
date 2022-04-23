@@ -1,11 +1,22 @@
 ---
-layout: root
+layout: midnight-content
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<!-- Top-section -->
+<div id="title" class="short-title">
+  <img src="{{ '/assets/images/author_photo.jpg?v=' | append: site.github.build_revision | relative_url }}" class="portrait-image"/>
+  <h1>{{ site.title | default: site.github.repository_name }}</h1>
+  <p>{{ site.description | default: site.github.project_tagline }}</p>
+</div>
+
+<hr>
+
+<p>Text!</p>
+
+<hr>
+
+<div id="footer">
+  <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+  <span class="credits right">Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+</div>
+
