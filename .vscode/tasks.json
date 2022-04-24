@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start development server",
+      "type": "shell",
+      "command": "bundle",
+      "args": ["exec", "jekyll serve"],
+      "options": {
+        "cwd": "${workspaceFolder}/src/"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

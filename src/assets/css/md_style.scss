@@ -1,0 +1,110 @@
+---
+---
+
+/* Add #footer id to go with midnight's default title id */
+section #footer {
+  /* Footer div */
+  border: 0; outline: none; margin: 0 0 25px 0; padding: 0 0 5px 0;
+  /* Footer sub-elements */
+  h1 { font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 40px; text-align: center; line-height: 36px; }
+  p { color: #d7cfbe; font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 18px; text-align: center; }
+  .credits { font-size: 11px; font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; color: #696969; margin-top: -10px; }
+  .credits.left { float: left; }
+  .credits.right { float: right; }
+}
+
+/* Modifiers for midnight defaults */
+
+#title.short-title {
+  margin: 0 0 25px 0;
+}
+
+.wrapper.wide-wrapper {
+  max-width: 900px;
+
+  .content-section {
+    max-width: 900px;
+    width: 100%;
+  }
+}
+
+/* MD text content */
+
+.md-text-content {
+  h1, h2, p { text-align: justify; }
+  h1, h2 { color: #e8e8e8; }
+  p { color: #f0e7d5; }
+  h1 { font-size: xx-large; }
+  h2 { font-size: x-large; } 
+  p { font-size: medium; }
+
+  .md-text-content-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+
+    img {
+      float: left;
+      max-width: 300px;
+    }
+  }
+}
+
+/* Author description */
+
+section #title.author-description {
+  width: 100%;
+  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  
+  h1 {
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  
+  p {
+    text-align: justify;
+    font-size: large;
+  }
+  
+  p.subtitle {
+    text-align: center;
+    font-size: medium;
+  }
+}
+
+/* Image classes */
+
+img.portrait-image {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+/* UI features */
+
+.md-demo-button {
+  display: inline-block;
+  
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  
+  color: #262625;
+  background-color: #ffcc00;
+  
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #f0e7d5;
+  }
+}
+
+/* Utility classes*/
+
+.padding-small {
+  padding: 15px
+}
