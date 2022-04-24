@@ -4,31 +4,27 @@ layout: midnight-content-wrapper
 
 <!-- Header grid -->
 <div id="title" class="author-description short-title">
-  <!-- Image grid item -->
-  <div class="padding-small">
+  <!-- Variables from _config.yml -->
+  <h1>{{ site.title | default: site.github.repository_name }}</h1>
+  <p class="subtitle">{{ site.description | default: site.github.project_tagline }}</p>
+  <!-- Image -->
+  <div class="image-container">
     <img
       src="{{ '/assets/images/author_photo.png?v=' | append: site.github.build_revision | relative_url }}"
-      class="portrait-image"
+      class="portrait-image padding-small"
     />
   </div>
-  <!-- Details grid item -->
-  <div class="padding-small">
-    <!-- Variables from _config.yml -->
-    <h1>{{ site.title | default: site.github.repository_name }}</h1>
-    <p class="subtitle">{{ site.description | default: site.github.project_tagline }}</p>
+  <!-- Written description -->
+  <p>
+    This index provides links to my projects along with more detailed descriptions of the
+    technologies involved and the challenges traversed in each.
+  </p>
 
-    <!-- Written description -->
-    <p>
-      This index provides links to my projects along with more detailed descriptions of the
-      technologies involved and the challenges traversed in each.
-    </p>
-
-    <p>
-      While GitHub is designed for quick access to code by developers, this page is intended for
-      readers browsing for big-picture insight into the solutions I've employed in each of these
-      projects.
-    </p>
-  </div>
+  <p>
+    While GitHub is designed for quick access to code by developers, this page is intended for
+    readers browsing for big-picture insight into the solutions I've employed in each of these
+    projects.
+  </p>
 </div>
 
 <hr />
