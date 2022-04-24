@@ -2,7 +2,7 @@
   "cSpell.enabled": true,
   "cSpell.import": ["${workspaceFolder}/tools/cspell.json"],
 
-  "prettier.configPath": "${workspaceFolder}/tools/.prettierrc",
+  "prettier.configPath": "tools/.prettierrc",
 
   "files.exclude": {
     "**/.git": true,

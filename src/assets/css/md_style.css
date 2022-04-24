@@ -5,8 +5,40 @@ section #footer .credits { font-size: 11px; font-family: 'OpenSansRegular', "Hel
 section #footer .credits.left { float: left; }
 section #footer .credits.right { float: right; }
 
-.wide-wrapper {
+.padding-small {
+  padding: 15px
+}
+
+.wrapper.wide-wrapper {
   max-width: 900px;
+}
+
+.wrapper.wide-wrapper .content-section {
+  max-width: 900px;
+  width: 100%;
+}
+
+.author-description {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+section #title.author-description h1 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+section #title.author-description p {
+  text-align: justify;
+  font-size: large;
+}
+
+section #title.author-description p.subtitle {
+  text-align: center;
+  font-size: medium;
 }
 
 #title.short-title {
