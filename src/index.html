@@ -1,48 +1,33 @@
 ---
-layout: midnight-content
+layout: index-header
 ---
 
-<!-- Header grid -->
-<div id="title" class="author-description short-title">
-  <!-- Image grid item -->
-  <div class="padding-small">
-    <img
-      src="{{ '/assets/images/author_photo.jpg?v=' | append: site.github.build_revision | relative_url }}"
-      class="portrait-image"
-    />
-  </div>
-  <!-- Details grid item -->
-  <div class="padding-small">
-    <!-- Variables from _config.yml -->
-    <h1>{{ site.title | default: site.github.repository_name }}</h1>
-    <p class="subtitle">{{ site.description | default: site.github.project_tagline }}</p>
+<h1>Frontend</h1>
+<p>
+  Frontend projects demonstrate a developer's ability to write code executed or displayed on a
+  client's machine, often in a browser. Modern frontend development depends on knowledge of HTML,
+  CSS, and JavaScript, as well as comfort using varied frameworks and among changing standards.
+</p>
 
-    <!-- Written description -->
+<div class="md-text-content-card">
+  <img src="assets/images/webglgol_image.png" alt="WebGL GoL Screenshot" />
+
+  <div>
+    <h2>WebGL Game of Life</h2>
+
     <p>
-      A developer's public GitHub content can be invaluable for gaining insight into their skills
-      and style, but GitHub is designed for quick access to code by developers, not for browsing by
-      readers looking for the big-picture.
+      Conway's Game of Life is a classic project for frontend developers because it is both visually
+      impressive and mathematically beautiful.
     </p>
 
     <p>
-      This index provides links to projects along with more detailed descriptions of the
-      technologies involved and the challenges traversed in each.
+      In addition to demonstrating standard frontend principles, my rendition of the Game of Life
+      makes use of the Lit framework to output a reusable native web component. Further, the game is
+      "played" using GLSL fragment shaders compiled and executed on the host's CPU, demonstrating
+      basic graphics pipelining and framebuffer swapping in addition to providing a much more
+      performant, parallelized version of the game.
     </p>
+
+    <a class="md-demo-button" href="/webgl-gol">GitHub</a>
   </div>
-</div>
-
-<hr />
-
-<p>Text!</p>
-
-<hr />
-
-<div id="footer">
-  <span class="credits left"
-    >Project maintained by
-    <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span
-  >
-  <span class="credits right"
-    >Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span
-  >
 </div>
