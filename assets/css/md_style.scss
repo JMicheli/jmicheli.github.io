@@ -16,7 +16,7 @@ section #footer {
 /* Modifiers for midnight defaults */
 
 #title.short-title {
-  margin: 0 0 25px 0;
+  margin: 0 0 5px 0;
 }
 
 .wrapper.wide-wrapper {
@@ -40,12 +40,12 @@ section #footer {
 
   .md-text-content-card {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 200px 1fr;
     column-gap: 20px;
 
     img {
       float: left;
-      max-width: 300px;
+      margin-bottom: 15px;
     }
   }
 }
@@ -54,10 +54,6 @@ section #footer {
 
 section #title.author-description {
   width: 100%;
-  
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
   
   h1 {
     font-weight: bold;
@@ -72,13 +68,19 @@ section #title.author-description {
   p.subtitle {
     text-align: center;
     font-size: medium;
+    margin-bottom: 5px;
+  }
+
+  div.image-container {
+    display: flex;
+    justify-content: center;
   }
 }
 
 /* Image classes */
 
 img.portrait-image {
-  max-width: 300px;
+  max-width: 400px;
   border-radius: 50%;
 }
 
@@ -100,6 +102,12 @@ img.portrait-image {
 
   &:hover {
     background-color: #f0e7d5;
+  }
+
+  /* Possibly temp*/
+  &.button-center {
+    float: right;
+    margin-right: 60px;
   }
 }
 
