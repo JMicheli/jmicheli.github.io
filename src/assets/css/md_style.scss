@@ -39,6 +39,10 @@ section #footer {
   p { font-size: medium; }
 }
 
+.md-text-content-card {
+  margin-bottom: 30px;
+}
+
 /* Author description */
 
 section #title.author-description {
@@ -77,13 +81,13 @@ img.portrait-image {
   background-color: #2e2e2e;
   border-radius: 3px;
 
-  margin-left: 3px;
-  margin-right: 3px;
-
+  margin: 10px 0px 15px 0px;
   padding: 5px;
 
   p {
     color: #e8e8e8;
+    font-size: small;
+
     margin-bottom: 5px;
   }
 
