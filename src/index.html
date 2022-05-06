@@ -28,7 +28,7 @@ layout: index-header
     performant, parallelized version of the game.
   </p>
 
-  <a class="md-demo-button button-center" href="https://github.com/jmicheli/webgl-gol">GitHub</a>
+  <a class="md-demo-button" href="https://github.com/jmicheli/webgl-gol">GitHub</a>
 </div>
 
 <h1>Automation and Tooling</h1>
@@ -42,21 +42,22 @@ layout: index-header
 <div class="md-text-content-card">
   <h2>Patent Downloader</h2>
 
-  {% include image.html src="assets/images/webglgol_image.png" alt="WebGL GoL Screenshot" %}
+  {% include image.html src="assets/images/patent_downloader_image.png" alt="The Patent Downloader
+  before starting a download." %}
 
   <p>
     The Patent Downloader (PDL) tool was developed to help paralegals at a law firm onboard new
     clients with large IP portfolios. Previously, paralegals would search for, download, and rename
-    PDFs of patents by hand—a process which could take an entire workday. The PDL completes the same
-    task in seconds.
+    PDFs of patents by hand—a process which could take an entire workday. This tool completes the
+    same task in seconds.
   </p>
 
   <p>
     The PDL is a WPF application written in C#, using Microsoft's .NET framework. When users input a
     file containing a list of patent numbers, the tool scrapes the file to generate a list of
-    patents to download before beginning a download processes using threaded workers to download
-    multiple documents at a time. In addition to outputting files to disk, the PDL provides a robust
-    set of logging options to report results for record-keeping and bug reporting.
+    patents to download before beginning a download processes using worker threads to download
+    multiple documents at a time. In addition to outputting PDFs, the PDL provides robust logging
+    options to report results for record-keeping or bug reporting.
   </p>
 
   <a class="md-demo-button" href="https://github.com/JMicheli/Patent-Downloader">GitHub</a>
