@@ -37,12 +37,6 @@ section #footer {
   h1 { font-size: xx-large; }
   h2 { font-size: x-large; } 
   p { font-size: medium; }
-
-  .md-text-content-card {
-    img {
-      margin-bottom: 15px;
-    }
-  }
 }
 
 /* Author description */
@@ -77,6 +71,28 @@ section #title.author-description {
 img.portrait-image {
   max-width: 400px;
   border-radius: 50%;
+}
+
+.md-image-container {
+  background-color: #2e2e2e;
+  border-radius: 3px;
+
+  margin-left: 3px;
+  margin-right: 3px;
+
+  padding: 5px;
+
+  p {
+    color: #e8e8e8;
+    margin-bottom: 5px;
+  }
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
 }
 
 /* UI features */
