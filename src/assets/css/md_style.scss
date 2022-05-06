@@ -39,12 +39,7 @@ section #footer {
   p { font-size: medium; }
 
   .md-text-content-card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-
     img {
-      float: left;
       margin-bottom: 15px;
     }
   }
@@ -102,12 +97,6 @@ img.portrait-image {
 
   &:hover {
     background-color: #f0e7d5;
-  }
-
-  /* Possibly temp*/
-  &.button-center {
-    float: right;
-    margin-right: 60px;
   }
 }
 
