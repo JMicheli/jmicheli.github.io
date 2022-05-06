@@ -10,25 +10,55 @@ layout: index-header
 </p>
 
 <div class="md-text-content-card">
-  <div>
-    <img src="assets/images/webglgol_image.png" alt="WebGL GoL Screenshot" />
-    <a class="md-demo-button button-center" href="/webgl-gol">GitHub</a>
-  </div>
+  <h2>WebGL Game of Life</h2>
 
-  <div>
-    <h2>WebGL Game of Life</h2>
+  {% include image.html src="assets/images/webglgol_image.png" alt="The Game of Life occurs on an
+  infinite 2D grid. Black cells are dead, while white cells are alive." %}
 
-    <p>
-      Conway's Game of Life is a classic project for frontend developers because it is both visually
-      impressive and mathematically beautiful.
-    </p>
+  <p>
+    Conway's Game of Life is a classic project for frontend developers because it is both visually
+    impressive and mathematically beautiful.
+  </p>
 
-    <p>
-      In addition to demonstrating standard frontend principles, my rendition of the Game of Life
-      makes use of the Lit framework to output a reusable native web component. Further, the game is
-      "played" using GLSL fragment shaders compiled and executed on the host's CPU, demonstrating
-      basic graphics pipelining and framebuffer swapping in addition to providing a much more
-      performant, parallelized version of the game.
-    </p>
-  </div>
+  <p>
+    In addition to demonstrating standard frontend principles, my rendition of the Game of Life
+    makes use of the Lit framework to output a reusable native web component. Further, the game is
+    "played" using GLSL fragment shaders compiled and executed on the host's CPU, demonstrating
+    basic graphics pipelining and framebuffer swapping in addition to providing a much more
+    performant, parallelized version of the game.
+  </p>
+
+  <a class="md-demo-button" href="https://github.com/jmicheli/webgl-gol">GitHub</a>
+</div>
+
+<h1>Automation and Tooling</h1>
+<p>
+  Scripting and automation can be a full-time job in and of themselves, but an ability to automate
+  easy or repetitive tasks is invaluable in any environment. In my own workflow, I use command line
+  tools developed in Python, build automation in Docker, Github Actions, and even platform-specific
+  libraries like Windows Presentation Foundation to make tools accessible to non-technical people.
+</p>
+
+<div class="md-text-content-card">
+  <h2>Patent Downloader</h2>
+
+  {% include image.html src="assets/images/patent_downloader_image.png" alt="The Patent Downloader
+  before starting a download." %}
+
+  <p>
+    The Patent Downloader (PDL) tool was developed to help paralegals at a law firm onboard new
+    clients with large IP portfolios. Previously, paralegals would search for, download, and rename
+    PDFs of patents by hand—a process which could take an entire workday. This tool completes the
+    same task in seconds.
+  </p>
+
+  <p>
+    The PDL is a WPF application written in C#, using Microsoft's .NET framework. When users input a
+    file containing a list of patent numbers, the tool scrapes the file to generate a list of
+    patents to download before beginning a download processes using worker threads to download
+    multiple documents at a time. In addition to outputting PDFs, the PDL provides robust logging
+    options to report results for record-keeping or bug reporting.
+  </p>
+
+  <a class="md-demo-button" href="https://github.com/JMicheli/Patent-Downloader">GitHub</a>
 </div>

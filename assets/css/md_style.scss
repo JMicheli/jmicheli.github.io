@@ -37,17 +37,10 @@ section #footer {
   h1 { font-size: xx-large; }
   h2 { font-size: x-large; } 
   p { font-size: medium; }
+}
 
-  .md-text-content-card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-
-    img {
-      float: left;
-      margin-bottom: 15px;
-    }
-  }
+.md-text-content-card {
+  margin-bottom: 30px;
 }
 
 /* Author description */
@@ -84,6 +77,28 @@ img.portrait-image {
   border-radius: 50%;
 }
 
+.md-image-container {
+  background-color: #2e2e2e;
+  border-radius: 3px;
+
+  margin: 10px 0px 15px 0px;
+  padding: 5px;
+
+  p {
+    color: #e8e8e8;
+    font-size: small;
+
+    margin-bottom: 5px;
+  }
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
+}
+
 /* UI features */
 
 .md-demo-button {
@@ -102,12 +117,6 @@ img.portrait-image {
 
   &:hover {
     background-color: #f0e7d5;
-  }
-
-  /* Possibly temp*/
-  &.button-center {
-    float: right;
-    margin-right: 60px;
   }
 }
 
