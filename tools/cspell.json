@@ -13,9 +13,12 @@
     "${workspaceFolder}/.vscode/"
   ],
   "words": [
+    "Blinn",
     "framebuffer",
     "mattgraham",
-    "uikit"
+    "Phong",
+    "uikit",
+    "Vulkan"
   ],
   "ignoreWords": [
     "jmicheli",
