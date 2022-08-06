@@ -2,6 +2,41 @@
 layout: index-header
 ---
 
+<h1>Graphics Programming</h1>
+<p>
+  Graphics programming is a broad concept covering a variety of applications distinguished by their
+  focus on providing visually interesting or highly realistic outputs. Such applications are most
+  often written in low-level languages like C, C++, and Rust and rely on low-level graphics APIs to
+  interact with the underlying hardware.
+</p>
+
+<div class="md-text-content-card">
+  <h2>MD Renderer</h2>
+
+  {% include image.html src="assets/images/mdrender_image.png"
+  href="https://github.com/jmicheli/md-renderer" alt="This is a simple test scene running in
+  realtime in MD Render." %}
+
+  <p>
+    MD Renderer is a realtime rendering engine written in Rust and interacting with the GPU through
+    the Vulkan API, the modern successor to OpenGL. Vulkan exposes an extremely low-level interface
+    by which applications can interact with the memory, execution, and threading model of the GPU in
+    order to write highly efficient graphics applications.
+  </p>
+
+  <p>
+    Presently, the engine uses a Blinn-Phong shading to provide reasonable visual fidelity using
+    classic PBR-style materials with surface properties defined using color, roughness, and normal
+    maps. It supports multiple lights and allows a user to implement simple interactions with the
+    scene through keyboard/mouse inputs, which the example uses to provide an FPS-style camera to
+    explore the test scene.
+  </p>
+
+  <a class="md-demo-button" href="https://github.com/jmicheli/md-renderer" target="_blank"
+    >GitHub</a
+  >
+</div>
+
 <h1>Frontend</h1>
 <p>
   Frontend projects demonstrate a developer's ability to write code executed or displayed on a
